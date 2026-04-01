@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="lightning.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with us">
+  <title>Contact - Green Innovation Ventures</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" id="header" role="banner">
+    <div class="container">
+            <a href="index.html" class="logo"><img src="give.png"></a>
+      
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+      </nav>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+  
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="John Doe"
+                required
+              >
+              <span class="error-message">Please enter your name</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="john@example.com"
+                required
+              >
+              <span class="error-message">Please enter a valid email</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                placeholder="How can we help?"
+                required
+              >
+              <span class="error-message">Please enter a subject</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Your message here..."
+                required
+              ></textarea>
+              <span class="error-message">Please enter your message</span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h3>Address</h3>
+              <p> Nairobi office Kiambu Road.</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h3>Phone</h3>
+              <p> (254)725 481 878</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h3>Email</h3>
+              <p>info@greeninnovation.com</p>
+            </div>
+          </div>
+          
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127646.78089255528!2d36.78189001693531!3d-1.187166390642092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3dd2ba7930ed%3A0x6b939d15c3f61a49!2sMushroom%20Gardens%20Estate!5e0!3m2!1sen!2ske!4v1763658982933!5m2!1sen!2ske" 
+              title="Our Location"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="success-title" aria-hidden="true">
+    <div>
+      <div class="modal-icon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for contacting us. We'll get back to you soon.</p>
+      <button class="btn btn-primary" id="closeSuccessModal">Close</button>
+    </div>
+  </div>
+
+  <!-- Error Modal -->
+  <div class="modal-overlay error-modal" id="errorModal" role="dialog" aria-modal="true" aria-labelledby="error-title" aria-hidden="true">
+    <div>
+      <div class="modal-icon">
+        <i class="fas fa-exclamation-triangle"></i>
+      </div>
+      <h3>Oops!</h3>
+      <p>Please fill in all required fields correctly.</p>
+      <button class="btn btn-primary" id="closeErrorModal">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green Innovation Ventures</h3>
+          
+          <div class="social-links">
+            <a href="https://ke.linkedin.com/company/green-innovation-ventures-enterprises-ltd" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="footer-links">
+            <p><i class="fas fa-map-marker-alt"></i> Kenya office-Kiambu Road.<br>
+
+
+<br>
+Uganda Office-Ntinda II Road
+Naguru, Kampala.
+<br></p></p>
+          <p><i class="fas fa-phone"></i> (254)725 481 878</p>
+            <p><i class="fas fa-envelope"></i> info@greeninnovation.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 green-innovation-ventures-enterprises-ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/nav.js" data-loaded></script>
+  <script src="js/form.js" data-loaded></script>
+  <script src="js/animations.js" data-loaded></script>
+</body>
+</html>

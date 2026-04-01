@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="lightning.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Latest news and updates from our company">
+  <title>News - Green Innovation Ventures</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" id="header" role="banner">
+    <div class="container">
+          <a href="index.html" class="logo"><img src="give.png"></a>
+      
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link active" aria-current="page">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero news-hero">
+    <div class="container">
+      <h1>Latest News & Updates</h1>
+      <p>Stay informed with our latest articles and company news</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+  
+  <!-- Search Section -->
+  <section class="section">
+    <div class="container">
+      <div class="search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input 
+          type="text" 
+          class="search-input" 
+          id="searchInput" 
+          placeholder="Search articles..."
+          aria-label="Search articles"
+        >
+      </div>
+      
+      <div class="articles-grid" id="articlesGrid">
+        <!-- Articles will be dynamically inserted here by JavaScript -->
+      </div>
+      
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search" style="font-size: 4rem; color: var(--text-light); margin-bottom: var(--spacing-md);"></i>
+        <p>No articles found matching your search</p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Article Modal -->
+  <div class="modal-overlay" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-body" id="modalBody">
+        <!-- Article content will be dynamically inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green Innovation Ventures</h3>
+          
+          <div class="social-links">
+            <a href="https://ke.linkedin.com/company/green-innovation-ventures-enterprises-ltd" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="footer-links">
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi office
+Kiambu Road.<br>
+
+Coast Office
+Malindi town.
+<br>
+Uganda Office
+Ntinda II Road
+Naguru, Kampala.
+<br></p></p>
+            <p><i class="fas fa-phone"></i> (254) 850 049 51</p>
+            <p><i class="fas fa-envelope"></i> info@greeninnovation.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 green-innovation-ventures-enterprises-ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="js/nav.js" data-loaded></script>
+  <script src="js/modal.js" data-loaded></script>
+  <script src="js/news.js" data-loaded></script>
+  <script src="js/animations.js" data-loaded></script>
+</body>
+</html>

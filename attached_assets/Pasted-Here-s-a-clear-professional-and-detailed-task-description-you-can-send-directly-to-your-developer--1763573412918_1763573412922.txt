@@ -1,0 +1,57 @@
+Here’s a clear, professional, and detailed task description you can send directly to your developer (or use as a mini-brief). It covers everything needed for a clean, modern, dynamic website using only HTML, CSS, and vanilla JavaScript (no backend or frameworks required).Project: Multi-Page Dynamic Website (HTML + CSS + Vanilla JavaScript)Goal
+Build a fast, responsive, modern-looking website with 4 pages: Home, About, News, and Contact. The site must feel dynamic and interactive using only vanilla JavaScript (no React, Vue, etc.). All code must be clean, well-commented, and easy to maintain or extend later.Pages & Required FeaturesHome Page (index.html)Hero section with a catchy headline, sub-headline, and a call-to-action button
+Smooth scroll to sections when clicking navigation links
+Featured content/cards section (e.g., latest news teaser or services)
+Animated counters or subtle entrance animations on scroll (using Intersection Observer)
+Responsive image carousel/slider (pure JS or CSS-only is fine)
+About Page (about.html)Company/team story with nice typography
+Team members section with photos, names, roles, and short bios (displayed in a grid)
+Timeline or milestones section (optional but nice-to-have)
+Statistics/numbers with count-up animation on scroll
+News/Blog Page (news.html)List of at least 6–8 news/articles (static data is fine – stored in a JS file as an array of objects)
+Each article shows: title, date, short excerpt, “Read more” button, and thumbnail
+Clicking “Read more” opens a modal/lightbox with the full article (no separate HTML page needed)
+Filtering by category/year (optional but impressive)
+Simple search bar that filters articles live as the user types
+Contact Page (contact.html)Clean contact form (Name, Email, Subject, Message) with client-side validation only (no backend)
+On submit → show a nice success message (or error if fields are invalid) using a modal or inline message
+Contact info section (address, phone, email) with icons
+Embedded Google Maps iframe (or static map image)
+Global RequirementsNavigationFixed/sticky header with smooth scrolling to sections (on Home) and proper active state highlighting
+Mobile-friendly hamburger menu (open/close animation required)
+
+ResponsivenessFully responsive on mobile, tablet, and desktop (use mobile-first approach)
+Proper breakpoints: ≤480px, 768px, 1024px, ≥1200px
+
+Performance & AccessibilityFast loading (optimize images, minify CSS/JS)
+Semantic HTML5 (header, nav, main, section, footer, etc.)
+Proper alt texts, ARIA labels where needed
+Smooth animations (60fps) – use CSS where possible, JS only when necessary
+
+Visual StyleModern, clean design (you can follow trends like glassmorphism, soft shadows, or bold typography)
+Consistent color scheme and Google Fonts (suggest 2–3 fonts max)
+Dark mode toggle (nice bonus feature – saves state in localStorage)
+
+Technical RequirementsOnly HTML5, CSS3, and vanilla JavaScript (ES6+)
+No build tools required, but folder structure must be organized:
+```
+/css
+   /js
+   /images
+   /fonts (if custom)
+index.html, about.html, news.html, contact.html
+   - All JavaScript modular (separate files: nav.js, modal.js, slider.js, form.js, etc., imported properly)
+   - No external libraries except Google Fonts and Font Awesome (or similar) for icons
+
+**Deliverables**
+   - Complete source code (zipped folder + GitHub repo link preferred)
+   - README.md with short instructions on how to run/edit
+   - All assets (images, icons) included
+
+**Deadline & Budget**
+(Put your own dates and budget here)
+
+This spec is detailed enough for any mid-level front-end developer to deliver a beautiful, dynamic website that feels professional and modern – all without a single line of backend code or framework.
+
+Just copy-paste this to your developer and you’ll get exactly what you want! 🚀
+
