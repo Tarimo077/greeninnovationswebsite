@@ -16,6 +16,24 @@
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+  tailwind.config = {
+      theme: {
+          extend: {
+              colors: {
+                  primary: "#00BF72",
+                  secondary: "#002499",
+                  card: "#ffffff",
+                  border: "#e5e7eb",
+                  muted: "#6b7280"
+              }
+          }
+      }
+  }
+  </script>
   
   <!-- CSS Files -->
   <link rel="stylesheet" href="css/variables.css">
@@ -175,31 +193,53 @@
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="section stats-section">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <h3 class="counter" data-target="12960">0</h3>
-            <p>Number Of People</p>
-          </div>
+    <!-- Industry Leadership -->
+    <section class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-['Poppins']">
+                    Industry Leadership
+                </h2>
 
-          <div class="stat-item">
-            <h3 class="counter" data-target="3157">0</h3>
-            <p>HouseHolds</p>
-          </div>
+                <p class="text-lg text-gray-500 mb-8">
+                    Recognized for innovation, quality, and customer satisfaction
+                </p>
 
-          <div class="stat-item">
-            <h3 class="counter" data-target="313">0</h3>
-            <p>Business</p>
-          </div>
+                <div class="grid md:grid-cols-3 gap-6">
 
-          <div class="stat-item">
-            <h3 class="counter" data-target="4">0</h3>
-            <p>Countries</p>
-          </div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 text-green-600 mx-auto mb-2">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+
+                        <h3 class="text-base font-semibold">
+                            End to End IoT Hardware Manufacturing
+                        </h3>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 text-green-600 mx-auto mb-2">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+
+                        <h3 class="text-base font-semibold">
+                            4 Innovation Awards
+                        </h3>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                        <div class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-green-100 text-green-600 mx-auto mb-2">
+                            <i class="fa-solid fa-arrows-to-circle"></i>
+                        </div>
+
+                        <h3 class="text-base font-semibold">
+                            Industry 4.0 Focus
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Partners Section -->

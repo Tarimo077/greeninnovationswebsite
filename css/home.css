@@ -406,4 +406,109 @@
   .partner-item img {
     max-height: 35px;
   }
+
+  /* ======================================================
+    Industry Leadership
+    (ported from uploaded website)
+  ====================================================== */
+
+  .industry-section{
+      padding:5rem 0;
+  }
+
+  .industry-heading{
+      max-width:760px;
+      margin:0 auto 3rem;
+      text-align:center;
+  }
+
+  .industry-heading h2{
+      font-family:'Poppins',sans-serif;
+      font-size:clamp(2rem,4vw,2.4rem);
+      font-weight:700;
+      color:#111827;
+      margin-bottom:.8rem;
+  }
+
+  .industry-heading p{
+      color:#6b7280;
+      font-size:1.125rem;
+  }
+
+  .industry-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+  }
+
+  .industry-card{
+
+      background:#ffffff;
+
+      border:1px solid #e5e7eb;
+
+      border-radius:16px;
+
+      padding:32px 24px;
+
+      text-align:center;
+
+      transition:
+          transform .3s ease,
+          box-shadow .3s ease,
+          border-color .3s ease;
+  }
+
+  .industry-card:hover{
+
+      transform:translateY(-6px);
+
+      border-color:#d1d5db;
+
+      box-shadow:
+          0 20px 40px rgba(0,0,0,.08);
+  }
+
+  .industry-icon{
+
+      width:48px;
+      height:48px;
+
+      margin:0 auto 16px;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      border-radius:12px;
+
+      background:#ecfdf5;
+
+      color:#00BF72;
+
+      font-size:22px;
+  }
+
+  .industry-card h3{
+
+      margin:0;
+
+      font-size:17px;
+
+      font-weight:600;
+
+      color:#111827;
+
+      line-height:1.55;
+  }
+
+  @media(max-width:900px){
+
+      .industry-grid{
+
+          grid-template-columns:1fr;
+
+      }
+
+  }
 }
